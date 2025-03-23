@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <form class="form-login">
+    <form class="form-login" onsubmit="event.preventDefault(); logar();">
         <h2>Login</h2>
 
         <div class="form-input">
@@ -25,12 +25,13 @@
         </div>
        <div class="form-button">
             <button class="button-entrar" type="submit">Entrar</button><br><br>
-            <button class="button-cadastro" type="submit">
-                <a href="./cadastro.html">Cadastro</a>
-            </button>
+            <a href="cadastro.html">
+                <button class="button-cadastro" type="button">Cadastro</button>
+            </a>
+
         </div>
 
     </form>
-    
+    <script src="../js/login.js"></script>
 </body>
 </html>
