@@ -84,3 +84,47 @@ body {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } /* Move apenas metade do total */
 }
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-list a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .main {
+    background-size: cover;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .galeria {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .slides {
+    width: calc(200% + 10px); /* considera o gap */
+    gap: 10px;
+  }
+
+  .slide {
+    width: calc(100vw - 40px); /* controla largura da imagem */
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+
