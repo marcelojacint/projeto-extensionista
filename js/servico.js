@@ -3,8 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botoes.forEach(botao => {
         botao.addEventListener("click", function () {
-            let servico = this.parentElement.textContent.trim();
-            alert("Serviço selecionado: " + servico);
+            // Pegando apenas o texto da linha antes do botão
+            let servico = this.parentElement.firstChild.textContent.trim();
+
+            localStorage.setItem("servicoSelecionado", servico);
+            window.location.href = "agendamento.html";
         });
     });
 });
