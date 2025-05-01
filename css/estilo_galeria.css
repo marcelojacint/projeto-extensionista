@@ -1,0 +1,112 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.botao-home {
+    display: inline-block;
+    background-color: rgba(201, 169, 173, 1);
+    color: white;
+    padding: 10px 2px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .botao-home:hover {
+    background-color: rgba(180, 150, 155, 1);
+  }
+  .a{
+    text-decoration: none;
+  }
+/* Estilos para o título h1 (Galeria de Fotos) */
+.h1_galeria {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid rgba(201, 169, 173, 1);
+    padding: 1px 2px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color:  rgb(122, 57, 64);
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* Definição da imagem de fundo responsiva */
+body {
+    background-color: aliceblue;
+    background-image: url('/images/beleza4.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin: 10px;
+}
+
+/* Contêiner dos carrosséis */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adiciona espaço entre os carrosséis */
+    width: 100%;
+    margin-top: 30px;
+}
+/* Estilos individuais dos carrosséis */
+.carousel {
+    width: 100%;
+    max-width: 800px; /* Aumenta o tamanho máximo do carrossel */
+    height: auto;
+    margin: 10px;
+}
+
+/* Ajuste de tamanho da imagem para todas ficarem iguais */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    border-radius: 10px;
+}
+
+
+/* Centraliza os itens dentro do carrossel */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column; /* Empilha os carrosséis em telas menores */
+        align-items: center;
+    }
+
+    .carousel {
+        width: 90%;
+        max-width: 500px; /* Ajusta o tamanho do carrossel em telas menores */
+    }
+
+    /* Ajuste das imagens para telas pequenas */
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

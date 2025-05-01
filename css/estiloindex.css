@@ -65,18 +65,18 @@ body {
 
 .slides {
   display: flex;
-  width: 200%; /* Agora temos o dobro das imagens */
-  animation: deslizar 12s linear infinite; /* Animação contínua */
+  width: 200%; 
+  animation: deslizar 12s linear infinite; 
   gap: 10px;
 }
 
 .slide {
-  width: 600px; /* Mesma largura do carrossel */
+  width: 600px; 
   height: 400px;
   object-fit: cover;
-  opacity: 0.8; /* Deixa as imagens levemente transparentes */
-  border: 5px solid white; /* Borda branca */
-    border-radius: 10px; /* Cantos arredondados */
+  opacity: 0.8; 
+  border: 5px solid white; 
+    border-radius: 10px; 
 }
 
 
