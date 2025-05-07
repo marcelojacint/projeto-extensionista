@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+.botao-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transition: 0.3s ease;
+  }
+  .botao-home:hover {
+    background-color: rgba(255, 210, 210, 0.6); /* cor no hover */
+  }
+  .h1-titulo{
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color:rgba(255, 210, 210, 0.6); 
+    border-radius: 8px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgb(255, 250, 250);
+    font-size: 15px;
+    padding: 2px 2px 2px 2px;
+
+  }
+  .container-historico {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 210, 210, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 250, 250);
+    width: 800px;
+    height: 500px;
+    max-width: 800px;
+  }
+  .fundo_tela {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff8e1;
+    background-image: url("../images/belezamaster.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  .botao-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .botao-home:hover {
+    background-color: rgba(255, 210, 210, 0.6);
+  }
+  
+  .h1-titulo {
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: rgba(255, 210, 210, 0.6);
+    border-radius: 8px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgb(255, 250, 250);
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .container-historico {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    background-color: rgba(255, 210, 210, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 250, 250);
+  }
+  
+  .fundo_tela {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff8e1;
+    background-image: url("../images/belezamaster.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 768px) {
+    .h1-titulo {
+      font-size: 1rem;
+      padding: 6px;
+    }
+  
+    .container-historico {
+      padding: 15px;
+      width: 95%;
+      height: 500px;
+    }
+  
+    .botao-home {
+      top: 10px;
+      left: 10px;
+      padding: 3px;
+    }
+  }
+  
+  /* Responsividade para celulares */
+  @media (max-width: 480px) {
+    .h1-titulo {
+      font-size: 0.95rem;
+    }
+  
+    .container-historico {
+      padding: 10px;
+      width: 100%;
+      height: 500px;
+      
+
+    }
+  }
+  
+  
