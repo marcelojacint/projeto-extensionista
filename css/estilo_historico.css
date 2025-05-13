@@ -1,152 +1,158 @@
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
 
+/* BOTÃO HOME */
 .botao-home {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: transparent;
-    border: none;
-    border-radius: 8px;
-    padding: 4px;
-    transition: 0.3s ease;
-  }
-  .botao-home:hover {
-    background-color: rgba(255, 210, 210, 0.6); /* cor no hover */
-  }
-  .h1-titulo{
-    color: #000;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color:rgba(255, 210, 210, 0.6); 
-    border-radius: 8px;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgb(255, 250, 250);
-    font-size: 15px;
-    padding: 2px 2px 2px 2px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 4px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
 
-  }
-  .container-historico {
-    width: 100%;
-    max-width: 800px;
-    background-color: rgba(255, 210, 210, 0.6);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(255, 250, 250);
-    width: 800px;
-    height: 500px;
-    max-width: 800px;
-  }
-  .fundo_tela {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff8e1;
-    background-image: url("../images/belezamaster.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-  
-  .botao-home {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: transparent;
-    border: none;
-    border-radius: 8px;
-    padding: 4px;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .botao-home:hover {
-    background-color: rgba(255, 210, 210, 0.6);
-  }
-  
+.botao-home:hover {
+  background-color: rgba(255, 210, 210, 0.6);
+}
+
+/* TÍTULO */
+.h1-titulo {
+  color: #000;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: rgba(255, 210, 210, 0.6);
+  border-radius: 8px;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgb(255, 250, 250);
+  font-size: 1.2rem;
+  padding: 8px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* CONTAINER HISTÓRICO */
+.container-historico {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  background-color: rgba(255, 210, 210, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(255, 250, 250);
+  overflow-y: auto;
+}
+
+/* FUNDO */
+.fundo_tela {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff8e1;
+  background-image: url("../images/belezamaster.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.btn-historico {
+  margin-top: 20px;
+  background-color: #f48fb1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 192, 203, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-historico:hover {
+  background-color: #ec407a;
+}
+
+
+/* RESPONSIVIDADE PARA TABLETS */
+@media (max-width: 768px) {
   .h1-titulo {
-    color: #000;
-    margin-bottom: 15px;
-    text-align: center;
-    background-color: rgba(255, 210, 210, 0.6);
-    border-radius: 8px;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgb(255, 250, 250);
-    font-size: 1.2rem;
-    padding: 8px;
-    width: 100%;
-    max-width: 800px;
+    font-size: 1rem;
+    padding: 6px;
   }
-  
-  .container-historico {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    background-color: rgba(255, 210, 210, 0.6);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(255, 250, 250);
-  }
-  
-  .fundo_tela {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff8e1;
-    background-image: url("../images/belezamaster.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Responsividade para tablets */
-  @media (max-width: 768px) {
-    .h1-titulo {
-      font-size: 1rem;
-      padding: 6px;
-    }
-  
-    .container-historico {
-      padding: 15px;
-      width: 95%;
-      height: 500px;
-    }
-  
-    .botao-home {
-      top: 10px;
-      left: 10px;
-      padding: 3px;
-    }
-  }
-  
-  /* Responsividade para celulares */
-  @media (max-width: 480px) {
-    .h1-titulo {
-      font-size: 0.95rem;
-    }
-  
-    .container-historico {
-      padding: 10px;
-      width: 100%;
-      height: 500px;
-      
 
-    }
+  .container-historico {
+    padding: 15px;
+    width: 95%;
+    height: 500px;
   }
-  
-  
+
+  .botao-home {
+    top: 10px;
+    left: 10px;
+    padding: 3px;
+  }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 480px) {
+  .h1-titulo {
+    font-size: 0.95rem;
+  }
+
+  .container-historico {
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+/* ----------------------------- */
+/* NOVOS ESTILOS PARA OS CARDS  */
+/* ----------------------------- */
+
+.card-agendamento {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-left: 6px solid #f48fb1;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.card-agendamento:hover {
+  transform: scale(1.01);
+}
+
+.card-agendamento p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* BOTÃO DE EXCLUIR */
+.btn-excluir {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-excluir:hover {
+  background-color: #c62828;
+}
