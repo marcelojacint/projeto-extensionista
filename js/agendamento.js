@@ -1,13 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const servico = localStorage.getItem("servicoSelecionado");
 
-    // Se usuário veio direto para agendar, mas não escolheu serviço ainda
     if (!servico) {
-        // Salva flag para saber que precisa voltar
         localStorage.setItem("aguardandoAgendamento", "true");
     }
 
-    // Verifica se já agendou e deve exibir apenas a mensagem
     const confirmacao = sessionStorage.getItem("agendamentoConfirmado");
 
     if (confirmacao === "true") {
@@ -34,16 +31,13 @@ function agendar() {
         agendamentos.push(novoAgendamento);
         localStorage.setItem("agendamentos", JSON.stringify(agendamentos));
 
-        // Salva dados do último agendamento para exibir na confirmação
         sessionStorage.setItem("agendamentoConfirmado", "true");
         sessionStorage.setItem("ultimoServico", servico);
         sessionStorage.setItem("ultimoHorario", horario);
 
-        // Limpa dados temporários
         localStorage.removeItem("servicoSelecionado");
         localStorage.removeItem("aguardandoAgendamento");
 
-        // Recarrega para mostrar mensagem de sucesso
         window.location.href = "agendamento.html";
     } else {
         alert("Por favor, escolha uma data e um horário.");
@@ -63,10 +57,15 @@ function mostrarMensagemFinal() {
             Serviço: <strong>${servico}</strong><br>
             Horário: <strong>${horario}</strong>
         </p>
+        <button id="btnHistorico" class="btn-historico">Ver Histórico</button>
     `;
 
-    // (Opcional) Limpa os dados depois de exibir
+    document.getElementById("btnHistorico").addEventListener("click", function () {
+        window.location.href = "historico.html";
+    });
+
     sessionStorage.removeItem("ultimoServico");
     sessionStorage.removeItem("ultimoHorario");
 }
+
 
